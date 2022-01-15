@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { AuthContext } from "../../contexts/auth";
+
 import './style.css';
 
 
 function LoginPage() {
+
+    const { authenticated, login } = useContext(AuthContext);
 
     const [user, setUser] = useState("");
     const [senha, setSenha] = useState("");
 
     const handleSubmit = (e) => {
         console.log("submit", { user, senha })
+        login(user, senha)
     }
 
 
@@ -46,6 +51,7 @@ function LoginPage() {
             </div>
         </section>
         <section id="login">
+            <p>{String(authenticated)}</p>
             <div className="container-login">
                 <img src="./logopg.png" alt="logo PG" />
                 <br />
