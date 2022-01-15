@@ -2,6 +2,7 @@ import express, { Router } from "express";
 import cors from "cors";
 
 import routes from './routes.js';
+import "./database/index.js";
 
 
 class App {
