@@ -7,3 +7,7 @@ As rotas estão protegidas, sendo necessário um usuário autenticado.Só a de c
 Para rodar o sistema: Na pasta front-end use o comando npm install ou yarn install para baixar todas as dependências do react, axios etc...; Na pasta server use o comando npm install ou yarn para baixar todas as dependências do nodejs, mongoose, bcryptjs etc...
 
 O banco foi MongoDB então no arquivo server/src/config/database.js substitua a string do banco do mongoDB.
+
+
+vídeo rápido monstrando o sistema: https://drive.google.com/file/d/12wyN8zdAHUXdPqo57k95_KnriS44RVtD/view?usp=sharing
+Estava com problema no mic.
