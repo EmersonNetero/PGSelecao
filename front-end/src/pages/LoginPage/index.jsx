@@ -6,7 +6,7 @@ import './style.css';
 
 function LoginPage() {
 
-    const { authenticated, login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
     const [user, setUser] = useState("");
     const [senha, setSenha] = useState("");
