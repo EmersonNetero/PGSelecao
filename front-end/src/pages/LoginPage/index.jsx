@@ -12,7 +12,6 @@ function LoginPage() {
     const [senha, setSenha] = useState("");
 
     const handleSubmit = (e) => {
-        console.log("submit", { user, senha })
         login(user, senha)
     }
 
@@ -51,7 +50,6 @@ function LoginPage() {
             </div>
         </section>
         <section id="login">
-            <p>{String(authenticated)}</p>
             <div className="container-login">
                 <img src="./logopg.png" alt="logo PG" />
                 <br />
